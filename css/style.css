@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange-color:#E3A127;
+    --orangeDark-color:#be8822;
+    --black-color:#1B262C;
+    --Blue-color:#031119;
+    --white-color:#ffff;
+    --offWhite-color:#E0E9F2;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+     font-family: "Nunito Sans", sans-serif;
+}
+
+.container{
+    padding: 0px 60px;
+}
+
+
+.aboutOuter , .aboutInnerBoxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutImage , .aboutContent{
+    width: 50%;
+}
+.aboutBox{
+    width: 46%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.aboutImage img {
+    border-radius: 15px;
+    width: 90%;
+}
+
+#about{
+    background-color: var(--Blue-color);
+    padding: 100px 0px;
+}
+
+.aboutContent h3 , p , h4{
+    color: var(--offWhite-color);
+}
+
+.aboutContent h3{
+    font-size: 2.2rem;
+}
+
+.aboutContent h4{
+    font-size: 1.15rem;
+}
+
+.aboutBox{
+    background-color: var(--black-color);
+    padding: 15px;
+    border-radius: 5px;
+    margin-right:20px ;
+}
+
+.aboutBox i{
+    color: var(--orange-color);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+section#about h2 {
+    font-size: 28px;
+    color: var(--offWhite-color);
+    margin-bottom: 20px;
+}
+
+span.aboutSp {
+    color: var(--white-color);
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 15px;
+    position: relative;
+}
+
+.aboutSp::after {
+    background-color: orange;
+    height: 1px;
+    width: 105px;
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 90px;
+}
+
+a.aboutBtn {
+    color: #fff;
+    text-transform: uppercase;
+    background: var(--orange-color);
+    padding: 10px 40px;
+    border-radius: 100px;
+    transition: all .5s;
+}
+
+a.aboutBtn:hover{
+    background-color: var(--orangeDark-color);
+}
+
+.aboutBox:hover{
+    transform: translateY(-7px);
+    transition: all .5s;
+}
