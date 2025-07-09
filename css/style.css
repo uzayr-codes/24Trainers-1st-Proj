@@ -28,6 +28,7 @@ body {
   padding: 0px 60px;
 }
 
+/* Header Styles */
 header {
   background-color: var(--black-color);
   padding: 19px 0;
@@ -73,7 +74,7 @@ header {
   color: var(--white-color);
 }
 
-.strategyBtn {
+.GetStartedBtn {
   background-color: var(--orange-color);
   color: var(--white-color);
   padding: 10px 25px;
@@ -83,8 +84,59 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.strategyBtn:hover {
+.GetStartedBtn:hover {
   background-color: var(--orangeDark-color);
+}
+
+#banner {
+  background-color: var(--black-color);
+  padding: 756px 0;
+}
+
+.bannerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bannerContent {
+  width: 50%;
+  color: var(--offWhite-color);
+}
+
+.bannerContent h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.bannerContent p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.bannerBtn {
+  background-color: var(--orange-color);
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.bannerBtn:hover {
+  background-color: var(--orangeDark-color);
+}
+
+.bannerImage {
+  width: 45%;
+}
+
+.bannerImage img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .aboutOuter,
