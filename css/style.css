@@ -28,6 +28,12 @@ body {
   padding: 0px 60px;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 20px;
+  }
+}
+
 header {
   background-color: var(--black-color);
   padding: 19px 0;
@@ -37,6 +43,13 @@ header {
   z-index: 999;
   border-radius: 60px;
   margin: 11px 30px 2px 30px;
+}
+
+@media (max-width: 768px) {
+  header {
+    border-radius: 0;
+    margin: 0;
+  }
 }
 
 .headerContainer {
@@ -129,6 +142,7 @@ header {
 
 .bannerImage {
   width: 45%;
+  margin-top: 100px;
 }
 
 .bannerImage img {
@@ -145,11 +159,13 @@ header {
 .aboutImage,
 .aboutContent {
   width: 50%;
+  position: relative;
 }
 .aboutBox {
   width: 46%;
   margin-top: 30px;
   margin-bottom: 30px;
+  will-change: transform;
 }
 
 .aboutImage img {
@@ -163,8 +179,8 @@ header {
 }
 
 .aboutContent h3,
-p,
-h4 {
+.aboutContent p,
+.aboutContent h4 {
   color: var(--offWhite-color);
 }
 
@@ -181,12 +197,17 @@ h4 {
   padding: 15px;
   border-radius: 5px;
   margin-right: 20px;
+  transition: all 0.5s;
 }
 
 .aboutBox i {
   color: var(--orange-color);
   font-size: 30px;
   margin-bottom: 10px;
+}
+
+.aboutBox:hover {
+  transform: translateY(-7px);
 }
 
 section#about h2 {
@@ -226,11 +247,6 @@ a.aboutBtn:hover {
   background-color: var(--orangeDark-color);
 }
 
-.aboutBox:hover {
-  transform: translateY(-7px);
-  transition: all 0.5s;
-}
-
 /* ====== SWIPER JS ======= */
 
 .swiper {
@@ -241,11 +257,13 @@ a.aboutBtn:hover {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #444;
+  background: var(--black-color);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 300px;
+  border-radius: 15px;
 }
 
 .swiper-slide img {
@@ -254,8 +272,6 @@ a.aboutBtn:hover {
   height: 100%;
   object-fit: cover;
 }
-
-/* ====== SWIPER JS ======= */
 
 .swiperFlexBox {
   display: flex;
@@ -274,23 +290,18 @@ a.aboutBtn:hover {
   background-color: var(--Blue-color);
 }
 
-.swiper-slide {
-  background: #000;
-  height: 300px;
-  border-radius: 5px;
-}
-
 .reviewBox {
-  color: #ffffff;
+  color: #fff;
   display: flex;
 }
-
 .swiper-button-lock {
   display: block !important;
 }
 
 .slider-buttton {
   position: relative;
+  width: 110px;
+  margin-top: 52px;
 }
 
 .slider-buttton i {
@@ -298,27 +309,23 @@ a.aboutBtn:hover {
   font-size: 50px;
 }
 
-.swiper-button-next::after {
-  display: none;
-}
+.swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
 }
+
 h2 {
   color: var(--offWhite-color);
   margin-right: 20px;
 }
-.slider-buttton {
-  width: 110px;
-  margin-top: 52px;
-}
+
 .bannerInfo span:nth-child(1) {
-  font-size: 60px;
+  font-size: 3.75rem; /* 60px */
   color: #ffffff;
   font-weight: bold;
 }
 .bannerInfo span:nth-child(2) {
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   color: #fff;
 }
 .bannerInfo {
@@ -333,12 +340,7 @@ h2 {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.aboutImage {
-  position: relative;
-}
-.bannerImage {
-  margin-top: 100px;
-}
+
 .bannerflex {
   display: flex;
   flex-wrap: wrap;
@@ -346,5 +348,7 @@ h2 {
 .bannerContent,
 .bannerImage {
   width: 50%;
-  border: 1px solid;
+}
+.swpierLeftContent p{
+  color: var(--offWhite-color);
 }
