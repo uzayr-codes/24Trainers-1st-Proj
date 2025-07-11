@@ -97,14 +97,6 @@ header {
   height: 100vh;
 }
 
-.bannerContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0px 10px;
-}
-
 .bannerContent {
   width: 50%;
   color: var(--offWhite-color);
@@ -279,7 +271,7 @@ a.aboutBtn:hover {
 
 #slider {
   height: 500px;
-  background-color: #ccc;
+  background-color: var(--Blue-color);
 }
 
 .swiper-slide {
@@ -289,7 +281,7 @@ a.aboutBtn:hover {
 }
 
 .reviewBox {
-  color: #fff;
+  color: #ffffff;
   display: flex;
 }
 
@@ -298,8 +290,12 @@ a.aboutBtn:hover {
 }
 
 .slider-buttton {
-  background: orange;
-  position: absolute;
+  position: relative;
+}
+
+.slider-buttton i {
+  color: #fff;
+  font-size: 50px;
 }
 
 .swiper-button-next::after {
@@ -307,4 +303,48 @@ a.aboutBtn:hover {
 }
 .swiper-button-prev::after {
   display: none;
+}
+h2 {
+  color: var(--offWhite-color);
+  margin-right: 20px;
+}
+.slider-buttton {
+  width: 110px;
+  margin-top: 52px;
+}
+.bannerInfo span:nth-child(1) {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.bannerInfo span:nth-child(2) {
+  font-size: 20px;
+  color: #fff;
+}
+.bannerInfo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 69px;
+  background-color: orange;
+  padding: 20px 30px;
+  border-radius: 10px;
+  bottom: 30px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.aboutImage {
+  position: relative;
+}
+.bannerImage {
+  margin-top: 100px;
+}
+.bannerflex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bannerContent,
+.bannerImage {
+  width: 50%;
+  border: 1px solid;
 }
