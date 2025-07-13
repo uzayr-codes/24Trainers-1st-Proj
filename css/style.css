@@ -280,6 +280,7 @@ a.aboutBtn:hover {
 
 .swpierLeftContent {
   width: 40%;
+  margin-top: 10px;
 }
 .swiperOuterBox {
   width: 60%;
@@ -333,7 +334,7 @@ h2 {
   flex-direction: column;
   position: absolute;
   right: 69px;
-  background-color: orange;
+  background-color: var(--orange-color);
   padding: 20px 30px;
   border-radius: 10px;
   bottom: 30px;
@@ -349,6 +350,28 @@ h2 {
 .bannerImage {
   width: 50%;
 }
-.swpierLeftContent p{
+.swpierLeftContent p {
   color: var(--offWhite-color);
+}
+.swiper-button-next i,
+.swiper-button-prev i {
+  background-color: var(--black-color);
+  padding: 2px;
+  border-radius: 50%;
+  color: #031119;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.swiper-button-prev i:hover,
+.swiper-button-next i:hover {
+  background-color: var(--orangeDark-color);
 }
