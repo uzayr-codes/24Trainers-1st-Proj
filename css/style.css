@@ -363,21 +363,53 @@ h2 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  width: 44px;
-  height: 44px;
+  /* width: 44px;
+  height: 44px; */
   border: 1px solid rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+  font-size: 30px;
 }
 
 .swiper-button-next i::before,
 .swiper-button-prev i::before {
-  transform: scale(0.30);
+  transform: scale(0.3);
   display: inline-block;
 }
 
 .swiper-button-prev i:hover,
 .swiper-button-next i:hover {
   background-color: var(--orangeDark-color);
+}
+#services {
+  color: #656c72;
+  background-color: var(--Blue-color);
+  height: 500px;
+  font-size: 20px;
+  position: relative; /* Added for absolute children positioning */
+}
+
+.services {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+}
+
+.services::after {
+  background-color: orange;
+  height: 1px;
+  width: 106px;
+  position: absolute;
+  content: "";
+  top: 35px;
+  left: 102px;
+}
+
+.service-heading {
+  color: var(--offWhite-color);
+  display: flex;
+  padding: 50px;
+  position: absolute;
+  font-size: 40px;
 }
