@@ -146,8 +146,11 @@ header {
 }
 
 .bannerImage img {
-  width: 100%;
+  width: 80%;
   border-radius: 10px;
+  display: block;
+  transform: translateX(180px);
+  margin-top: 55px;
 }
 
 .aboutOuter,
@@ -363,13 +366,12 @@ h2 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  /* width: 44px;
-  height: 44px; */
+  width: 44px;
+  height: 44px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  font-size: 30px;
 }
 
 .swiper-button-next i::before,
@@ -387,7 +389,7 @@ h2 {
   background-color: var(--Blue-color);
   height: 500px;
   font-size: 20px;
-  position: relative; /* Added for absolute children positioning */
+  position: relative;
 }
 
 .services {
